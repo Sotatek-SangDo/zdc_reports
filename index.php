@@ -7,24 +7,30 @@
 	<meta name='robots' content='noodp, noydir' />
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
 	<title>TCC Testing Report</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 	<h1 style='font-size:56px'>Reports ZDC Auto</h1>
 	<div>
 	<h4>File report .html</h4>
-		<ul>
-			<?php 
-				$dir    = '/home/sang/reports';
-				$files = scandir($dir);
-				foreach ($files as $file) {
-					$extension = pathinfo($file, PATHINFO_EXTENSION);
-					if ($extension == 'html') {
-						echo "<li><a href='/$file'>$file</a> </li>";
+		<?php if(!isset($_GET["folder"])) { ?>
+			<ul class="list__folder">
+				<?php 
+					$dirs = glob('*', GLOB_ONLYDIR);
+					foreach($dirs as $file) {
+						if(is_dir($file) && $file!= "images") {
+							echo "<li class='item__folder'>";
+								echo "<img src='images/icon/folder.png' height='30' width='30'/>";
+									echo "<a href='$file'>" . $file . "</a>";
+							echo "</li>";
+					 	}
 					}
-				}
-			?>
-		</ul>
+				?>
+			</ul>
+		<?php } else { 
+			echo $_GET["folder"];
+		}?>
 	<div>
 <body>
 

@@ -1,2 +1,2 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^reports.cf/
+RewriteEngine on
+RewriteRule ^?$ index.php

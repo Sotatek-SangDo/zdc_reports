@@ -1,0 +1,23 @@
+ul.list__folder {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+li.item__folder {
+    line-height: 40px;
+    display: block;
+    padding-left: 35px;
+    position: relative;
+}
+li img {
+    position: absolute;
+    bottom: 8px;
+    left: 0
+}
+a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 28px;
+    font-weight: 700;
+}
