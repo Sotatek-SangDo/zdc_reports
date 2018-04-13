@@ -4,6 +4,9 @@ ul.list__folder {
     list-style: none;
     width: 100%;
 }
+body {
+    background: #f7f7f7;
+}
 li.item__folder {
     line-height: 40px;
     display: block;
@@ -20,4 +23,78 @@ a {
     text-decoration: underline;
     font-size: 28px;
     font-weight: 700;
+}
+.folder__title b {
+    font-size: 32px;
+    line-height: 20px;
+    font-weight: bolder;
+    color: blue;
+    text-decoration: underline;
+}
+.item__file {
+    margin-bottom: 1%;
+    display: block;
+    height: 100%;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    min-height: 280px;
+    padding-top: 5px;
+}
+.item__file:nth-child(1) {
+    border-top: 1px solid #333;
+}
+.item__file a {
+    float: left;
+    height: 100%;
+    padding-right: 3%;
+    min-width: 400px;
+    min-height: 280px;
+    border-right: 1px solid #333;
+    margin-right: 24px;
+}
+.item__file .testcase {
+    float: left;
+    width: 40%;
+}
+tr, td, th{
+     border: 1px dotted #444;
+}
+table {
+    border-collapse: collapse;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+table tbody {
+    min-width: 60%;
+}
+td, th {
+    padding-left: 8%;
+}
+td {
+    line-height: 30px;
+}
+div.list__item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    width: 50%;
+}
+div.list__item li {
+    display: inline-block;
+    border: 1px dotted #444;
+    border-left: none;
+    line-height: 25px;
+    padding: 10px;
+    width: 20%;
+}
+.detail {
+    color: blue;
+}
+.first {
+    background: red;
+}
+.first th {
+    color: #fff;
+    line-height: 30px;
 }

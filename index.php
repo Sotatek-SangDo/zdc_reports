@@ -13,8 +13,9 @@
 <body>
 	<h1 style='font-size:56px'>Reports ZDC Auto</h1>
 	<div>
-	<h4>File report .html</h4>
 		<?php if(!isset($_GET["f"])) { ?>
+			<h3>Folder</h3>
+			<hr style="width: 100%; height: 1px; color: #333" />
 			<ul class="list__folder">
 				<?php 
 					$dirs = glob('*', GLOB_ONLYDIR);
@@ -29,7 +30,54 @@
 				?>
 			</ul>
 		<?php } else { 
-			echo $_GET["f"];
+			$folder = $_GET["f"];
+			echo '<h3 class="folder__title"> Folder : <b>' . $folder . '</b></h3>';
+			$dir = getcwd() . '/' . $_GET["f"];
+			$files = scandir($dir);
+				echo '<ul class="list__file">';
+				foreach ($files as $file) {
+                    $extension = pathinfo($file, PATHINFO_EXTENSION);
+                    if ($extension == 'html') {
+                        echo "<li class='item__file'><a href='$folder/$file'>$file</a>";
+                        $url = $folder . '/' . $file;
+                        $content = file_get_contents($url);
+                        $doc = new \DOMDocument('1.0', 'UTF-8');
+                        $internalErrors = libxml_use_internal_errors(true);
+                        $doc->loadHTML($content);
+                        libxml_use_internal_errors($internalErrors);
+            			$tagSpans = $doc->getElementsByTagName("span");
+            			$i = 0;
+            			echo '<table class="testcase">';
+            			echo "<tr class='first'>";
+            			echo "<th>Testcase</th>";
+            			echo "<th>Status</th>";
+            			echo "<th>Device</th>";
+            			echo "</tr>";
+            			foreach ($tagSpans as $key => $span) {
+            				$class = $span->getAttribute("class");
+            				switch ($class) {
+            					case 'test-name':
+            					case 'test-status right pass':
+            					case 'category label white-text':
+	            					if($i%3==0) {
+	            						echo "<tr>";
+	            						echo '<td class="detail">'. $span->nodeValue . '</td>';
+	            					} else if($i%3==2) {
+	            						echo '<td class="detail">'. $span->nodeValue . '</td>';
+	            						echo '</tr>';
+	            					} else {
+            							echo '<td class="detail">'. $span->nodeValue . '</td>';
+            						}
+            						$i++;
+            						break;
+            					default:
+            						break;
+            				}
+						}
+						echo '</table></li>';
+                    }
+                }
+                echo '</ul>';
 		}?>
 	<div>
 <body>
