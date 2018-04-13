@@ -43,7 +43,7 @@ a {
 .item__file:nth-child(1) {
     border-top: 1px solid #333;
 }
-.item__file a {
+.item__file>a {
     float: left;
     height: 100%;
     padding-right: 3%;
@@ -68,7 +68,7 @@ table tbody {
     min-width: 60%;
 }
 td, th {
-    padding-left: 8%;
+    padding-left: 6%;
 }
 td {
     line-height: 30px;

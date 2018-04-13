@@ -37,8 +37,8 @@
 				echo '<ul class="list__file">';
 				foreach ($files as $file) {
                     $extension = pathinfo($file, PATHINFO_EXTENSION);
-                    if ($extension == 'html') {
-                        echo "<li class='item__file'><a href='$folder/$file'>$file</a>";
+                    if ($extension == 'php') {
+                        echo "<li class='item__file'><a target='__blank' href='$folder/$file'>$file</a>";
                         $url = $folder . '/' . $file;
                         $content = file_get_contents($url);
                         $doc = new \DOMDocument('1.0', 'UTF-8');
@@ -49,6 +49,7 @@
             			$i = 0;
             			echo '<table class="testcase">';
             			echo "<tr class='first'>";
+            			echo "<th>ID</th>";
             			echo "<th>Testcase</th>";
             			echo "<th>Status</th>";
             			echo "<th>Device</th>";
@@ -57,12 +58,14 @@
             				$class = $span->getAttribute("class");
             				switch ($class) {
             					case 'test-name':
+            					case 'test__id':
             					case 'test-status right pass':
             					case 'category label white-text':
-	            					if($i%3==0) {
+            						$j = 0;
+	            					if($i%4==0) {
 	            						echo "<tr>";
-	            						echo '<td class="detail">'. $span->nodeValue . '</td>';
-	            					} else if($i%3==2) {
+	            						echo '<td class="detail"><a href="'.$folder . '/' . $file .'?order='.$j.'">'. $span->nodeValue . '</a></td>';
+	            					} else if($i%3==3) {
 	            						echo '<td class="detail">'. $span->nodeValue . '</td>';
 	            						echo '</tr>';
 	            					} else {
