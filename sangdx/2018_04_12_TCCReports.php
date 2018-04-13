@@ -164,7 +164,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='images/TCLogin.png' width='10%' src='' data-src='images/TCLogin.png'></li>
+								<li><img data-featherlight='../images/TCLogin.png' width='10%' src='' data-src='../images/TCLogin.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -207,7 +207,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='images/TCChooseMode.png' width='10%' src='' data-src='images/TCChooseMode.png'></li>
+								<li><img data-featherlight='../images/TCChooseMode.png' width='10%' src='' data-src='../images/TCChooseMode.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -250,7 +250,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='images/searchByLatiude.png' width='10%' src='' data-src='images/searchByLatiude.png'></li>
+								<li><img data-featherlight='../images/searchByLatiude.png' width='10%' src='' data-src='../images/searchByLatiude.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -293,7 +293,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='images/tabIconToyota.png' width='10%' src='' data-src='images/tabIconToyota.png'></li>
+								<li><img data-featherlight='../images/tabIconToyota.png' width='10%' src='' data-src='../images/tabIconToyota.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -336,7 +336,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='images/categorySearch.png' width='10%' src='' data-src='images/categorySearch.png'></li>
+								<li><img data-featherlight='../images/categorySearch.png' width='10%' src='' data-src='../images/categorySearch.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -379,7 +379,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='images/searchRoute.png' width='10%' src='' data-src='images/searchRoute.png'></li>
+								<li><img data-featherlight='../images/searchRoute.png' width='10%' src='' data-src='../images/searchRoute.png'></li>
 							</ul>
 					</div>
 				</li>
