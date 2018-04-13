@@ -164,7 +164,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='../images/TestCaseSearchCountry.png' width='10%' src='' data-src='../images/TestCaseSearchCountry.png'></li>
+								<li><img data-featherlight='images/TestCaseSearchCountry.png' width='10%' src='' data-src='images/TestCaseSearchCountry.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -207,7 +207,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='../images/TestcaseSearchAddress.png' width='10%' src='' data-src='../images/TestcaseSearchAddress.png'></li>
+								<li><img data-featherlight='images/TestcaseSearchAddress.png' width='10%' src='' data-src='images/TestcaseSearchAddress.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -250,7 +250,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='../images/searchFreeword.png' width='10%' src='' data-src='../images/searchFreeword.png'></li>
+								<li><img data-featherlight='images/searchFreeword.png' width='10%' src='' data-src='images/searchFreeword.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -293,7 +293,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='../images/searchWord.png' width='10%' src='' data-src='../images/searchWord.png'></li>
+								<li><img data-featherlight='images/searchWord.png' width='10%' src='' data-src='images/searchWord.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -336,7 +336,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='../images/searchMutilWord.png' width='10%' src='' data-src='../images/searchMutilWord.png'></li>
+								<li><img data-featherlight='images/searchMutilWord.png' width='10%' src='' data-src='images/searchMutilWord.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -379,7 +379,7 @@
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='../images/searchPhoneNumber.png' width='10%' src='' data-src='../images/searchPhoneNumber.png'></li>
+								<li><img data-featherlight='images/searchPhoneNumber.png' width='10%' src='' data-src='images/searchPhoneNumber.png'></li>
 							</ul>
 					</div>
 				</li>
