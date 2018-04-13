@@ -13,11 +13,16 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/9fa70d0ed9c34a8ed445ceee3494d3d7de7f8918/dist/css/extent.css' type='text/css' rel='stylesheet' />
-	
 	<title>TCC Testing Report</title>
-
+	<script type="text/javascript">
+		var x = "<?php echo $_GET["order"]; ?>";
+		document.addEventListener("DOMContentLoaded", function(event) {
+		    setTimeout(function(){ document.getElementsByClassName("test__id")[x].click(); }, 0);
+		});
+	</script>
 </head>
 	<body class='extent standard default hide-overflow '>
+		<button id="click" style="opacity: 0">click</button>
 		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
 			<span><i class='material-icons'>desktop_windows</i></span>
 		</div>
@@ -649,8 +654,6 @@
 		</script>
 		
 			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/9fa70d0ed9c34a8ed445ceee3494d3d7de7f8918/dist/js/extent.js' type='text/javascript'></script>
-		
-		
 	</body>
 	
 </html>

@@ -54,6 +54,7 @@
             			echo "<th>Status</th>";
             			echo "<th>Device</th>";
             			echo "</tr>";
+                        $j = 0;
             			foreach ($tagSpans as $key => $span) {
             				$class = $span->getAttribute("class");
             				switch ($class) {
@@ -61,11 +62,11 @@
             					case 'test__id':
             					case 'test-status right pass':
             					case 'category label white-text':
-            						$j = 0;
 	            					if($i%4==0) {
 	            						echo "<tr>";
-	            						echo '<td class="detail"><a href="'.$folder . '/' . $file .'?order='.$j.'">'. $span->nodeValue . '</a></td>';
-	            					} else if($i%3==3) {
+	            						echo '<td class="detail"><a target="__blank" href="'.$folder . '/' . $file .'?order='.$j.'">'. $span->nodeValue . '</a></td>';
+	            					    $j++;
+                                    } else if($i%3==3) {
 	            						echo '<td class="detail">'. $span->nodeValue . '</td>';
 	            						echo '</tr>';
 	            					} else {
