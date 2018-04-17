@@ -16,7 +16,7 @@
 		<?php if(isset($_GET["f2"]) && isset($_GET["f2"])) { 
             $folder = $_GET["f2"];
             $fl = $_GET["f1"];
-            echo '<h3 class="folder__title"> Folder : <b>' . $folder . '</b></h3>';
+            echo '<h3 class="folder__title"> Folder : <b>' .$fl. '/'. $folder . '</b></h3>';
             $dir = getcwd() . '/'.$fl.'/' . $folder;
             $files = scandir($dir);
                 echo '<ul class="list__file">';
