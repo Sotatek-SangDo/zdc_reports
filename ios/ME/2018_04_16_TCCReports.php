@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +13,12 @@
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/9fa70d0ed9c34a8ed445ceee3494d3d7de7f8918/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
 	<title>TCC Testing Report</title>
-
+	<script type="text/javascript">
+		var x = "<?php echo $_GET["order"]; ?>";
+		document.addEventListener("DOMContentLoaded", function(event) {
+		    setTimeout(function(){ document.getElementsByClassName("test__id")[x].click(); }, 0);
+		});
+	</script>
 </head>
 	<body class='extent standard default hide-overflow '>
 		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
@@ -42,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-				<span class='label suite-start-time'>Apr 12, 2018 7:34:26 PM</span>
+				<span class='label suite-start-time'>Apr 17, 2018 10:56:16 AM</span>
 			</a>
 			<a href='#!'>
 				<span class='label'>v3.0.3</span>
@@ -124,15 +127,16 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>TCLogin</span>
-						<span class='test-time'>Apr 12, 2018 7:34:56 PM</span>
+						<span class='test__id' style="display: none;">1-1-1</span>
+						<span class='test-name'>testCaseLogin</span>
+						<span class='test-time'>Apr 17, 2018 10:56:39 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 12, 2018 7:34:56 PM</span>
-	<span class='label end-time'>Apr 12, 2018 7:35:30 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+37ms</span>
+	<span class='label start-time'>Apr 17, 2018 10:56:39 AM</span>
+	<span class='label end-time'>Apr 17, 2018 10:57:27 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 48s+303ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -151,14 +155,14 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:35:30 PM</td>
-					<td class='step-details'>TCLogin</td>
+					<td class='timestamp'>10:57:27 AM</td>
+					<td class='step-details'>testCaseLogin</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='images/TCLogin.png' width='10%' src='' data-src='images/TCLogin.png'></li>
+								<li><img data-featherlight='images/testCaseLogin.png' width='10%' src='' data-src='images/testCaseLogin.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -166,15 +170,16 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
+						<span class='test__id' style="display: none;">1-1-2</span>
 						<span class='test-name'>TCChooseMode</span>
-						<span class='test-time'>Apr 12, 2018 7:35:31 PM</span>
+						<span class='test-time'>Apr 17, 2018 10:57:28 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 12, 2018 7:35:31 PM</span>
-	<span class='label end-time'>Apr 12, 2018 7:35:52 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+270ms</span>
+	<span class='label start-time'>Apr 17, 2018 10:57:28 AM</span>
+	<span class='label end-time'>Apr 17, 2018 10:57:48 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+144ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -193,7 +198,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:35:52 PM</td>
+					<td class='timestamp'>10:57:48 AM</td>
 					<td class='step-details'>TCChooseMode</td>
 				</tr>
 			</tbody>
@@ -208,15 +213,16 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>searchByLatiude</span>
-						<span class='test-time'>Apr 12, 2018 7:35:52 PM</span>
+						<span class='test__id' style="display: none;">1-6-19</span>
+						<span class='test-name'>pointRegistion</span>
+						<span class='test-time'>Apr 17, 2018 10:57:49 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 12, 2018 7:35:52 PM</span>
-	<span class='label end-time'>Apr 12, 2018 7:37:34 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 41s+385ms</span>
+	<span class='label start-time'>Apr 17, 2018 10:57:49 AM</span>
+	<span class='label end-time'>Apr 17, 2018 10:58:20 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+128ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -235,140 +241,14 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:37:34 PM</td>
-					<td class='step-details'>searchByLatiude</td>
+					<td class='timestamp'>10:58:20 AM</td>
+					<td class='step-details'>pointRegistion</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='images/searchByLatiude.png' width='10%' src='' data-src='images/searchByLatiude.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>tabIconToyota</span>
-						<span class='test-time'>Apr 12, 2018 7:37:34 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 12, 2018 7:37:34 PM</span>
-	<span class='label end-time'>Apr 12, 2018 7:37:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+918ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>iPhone7</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:37:54 PM</td>
-					<td class='step-details'>tabIconToyota</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='images/tabIconToyota.png' width='10%' src='' data-src='images/tabIconToyota.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>categorySearch</span>
-						<span class='test-time'>Apr 12, 2018 7:37:55 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 12, 2018 7:37:55 PM</span>
-	<span class='label end-time'>Apr 12, 2018 7:38:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 58s+785ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>iPhone7</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:38:54 PM</td>
-					<td class='step-details'>categorySearch</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='images/categorySearch.png' width='10%' src='' data-src='images/categorySearch.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>searchRoute</span>
-						<span class='test-time'>Apr 12, 2018 7:38:54 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 12, 2018 7:38:54 PM</span>
-	<span class='label end-time'>Apr 12, 2018 7:39:58 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 3s+579ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>iPhone7</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:39:58 PM</td>
-					<td class='step-details'>searchRoute</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='images/searchRoute.png' width='10%' src='' data-src='images/searchRoute.png'></li>
+								<li><img data-featherlight='images/pointRegistion.png' width='10%' src='' data-src='images/pointRegistion.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -405,7 +285,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>6</span> test(s) passed</span>
+					<span><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
@@ -420,7 +300,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>6</span> step(s) passed</span>
+					<span><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
@@ -460,12 +340,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>iPhone7</span>
 						<span class='category-status right'>
-							<span class='label pass'>6</span>
+							<span class='label pass'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 6</span>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
 							
 							
 						</div>
@@ -481,33 +361,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 12, 2018 7:34:56 PM</td>
-										<td class='linked' test-id='1'>TCLogin</td>
+										<td>Apr 17, 2018 10:56:39 AM</td>
+										<td class='linked' test-id='1'>testCaseLogin</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 12, 2018 7:35:31 PM</td>
+										<td>Apr 17, 2018 10:57:28 AM</td>
 										<td class='linked' test-id='2'>TCChooseMode</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 12, 2018 7:35:52 PM</td>
-										<td class='linked' test-id='3'>searchByLatiude</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 12, 2018 7:37:34 PM</td>
-										<td class='linked' test-id='4'>tabIconToyota</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 12, 2018 7:37:55 PM</td>
-										<td class='linked' test-id='5'>categorySearch</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 12, 2018 7:38:54 PM</td>
-										<td class='linked' test-id='6'>searchRoute</td>
+										<td>Apr 17, 2018 10:57:49 AM</td>
+										<td class='linked' test-id='3'>pointRegistion</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -534,31 +399,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 12, 2018 7:34:26 PM</div>
+					<div class='panel-lead'>Apr 17, 2018 10:56:16 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 12, 2018 7:39:58 PM</div>
+			 		<div class='panel-lead'>Apr 17, 2018 10:58:20 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>332,002ms</div>
+					<div class='panel-lead'>124,224ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -598,7 +463,7 @@
 						</tr>
 						<tr>
 							<td>iPhone7</td>
-							<td>6</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
@@ -614,7 +479,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 6,
+				passParent: 3,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -622,7 +487,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 6,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,

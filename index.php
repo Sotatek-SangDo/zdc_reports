@@ -16,7 +16,7 @@
 		<?php if(isset($_GET["f2"]) && isset($_GET["f2"])) { 
             $folder = $_GET["f2"];
             $fl = $_GET["f1"];
-            echo '<h3 class="folder__title"> Folder : <b>' .$fl. '/'. $folder . '</b></h3>';
+            echo '<h3 class="folder__title"> Folder : <b><a href="/">Report</a>/<a href="?f1='.$fl.'">' .$fl. '</a>/'. $folder . '</b></h3>';
             $dir = getcwd() . '/'.$fl.'/' . $folder;
             $files = scandir($dir);
                 echo '<ul class="list__file">';
@@ -69,7 +69,7 @@
                 }
                 echo '</ul>';
             } else if(isset($_GET["f1"])) { ?>
-                <h3>Folder</h3>
+                <h3 class="folder__title">Folder : <b><a href="/">Report</a>/<?php echo $_GET['f1'];?></b></h3>
                 <ul class="list__folder">
                     <?php 
                         $dirs = glob(''.$_GET["f1"].'/*', GLOB_ONLYDIR);
