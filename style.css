@@ -4,6 +4,25 @@ ul.list__folder {
     list-style: none;
     width: 100%;
 }
+textarea,
+input {
+    outline: none;
+}
+.comments {
+    margin: 5% 0 0 0;
+    max-width: 1025px;
+}
+.mdl-data-table {
+    min-width: 1024px;  
+}
+.mdl-button {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    float: right;
+}
+.comments th {
+    text-align: center !important;
+}
 body {
     background: #f7f7f7;
 }
