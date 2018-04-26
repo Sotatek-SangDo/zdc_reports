@@ -57,7 +57,7 @@ a {
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
     min-height: 420px;
-    padding-top: 5px;
+    padding: 1% 0;
 }
 .item__file:nth-child(1) {
     border-top: 1px solid #333;
@@ -112,6 +112,7 @@ div.list__item li {
 }
 .detail {
     color: blue;
+    text-transform: capitalize;
 }
 .first {
     background: red;
